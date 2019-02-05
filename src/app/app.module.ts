@@ -12,11 +12,6 @@ import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductsComponent } from './products/products.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-//import { ProductsComponent } from './products/products.component';
-//import { HomeComponent } from './home/home.component';
-//import { CartComponent } from './cart/cart.component';
-//import { SidebarComponent } from './sidebar/sidebar.component';
-
 
 @NgModule({
   declarations: [
