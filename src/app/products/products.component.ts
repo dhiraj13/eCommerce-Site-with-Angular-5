@@ -92,7 +92,9 @@ export class ProductsComponent implements OnInit {
     let product=this.products[index];
     let cartData=[];
     let data = localStorage.getItem('cart');
-    if(data!==null) {
+    console.log("data:"+data);
+    console.log("data type:"+typeof data);
+    if(data!=="null") {
       cartData=JSON.parse(data);
     }
     cartData.push(product);

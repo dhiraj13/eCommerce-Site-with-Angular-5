@@ -21,7 +21,7 @@ export class CartComponent implements OnInit {
       this.bill = 0;
       for(let i in this.cartProducts) {
         this.cartProducts[i]["qt"]=1;
-        this.bill = this.bill + this.cartProducts[i].price + this.cartProducts[i].qt;
+        this.bill = this.bill + this.cartProducts[i].price * this.cartProducts[i].qt;
       }
     } else {
        this.cartProducts = [];
@@ -31,7 +31,7 @@ export class CartComponent implements OnInit {
   updateTotal(){
     this.bill=0;
     for(let i in this.cartProducts) {
-      this.bill = this.bill + this.cartProducts[i].price + this.cartProducts[i].qt;
+      this.bill = this.bill + this.cartProducts[i].price * this.cartProducts[i].qt;
     }
   }
 
